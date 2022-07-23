@@ -24,14 +24,14 @@ namespace VendingMachine_SaiAnudeep
 
         public static void DisplayProducts()
         {
-            bool IsSuccess = false;
+            bool loopBreak = false;
             double colaPrice = 1;
             double chipsPrice = 0.5;
             double candyPrice = 0.65;
             double selectedItemPrice = 0;
             try
             {
-                while (!IsSuccess)
+                while (!loopBreak)
                 {
                     Console.WriteLine("Welcome! Choose any one of the below product");
                     int iterator = 1;
@@ -41,6 +41,7 @@ namespace VendingMachine_SaiAnudeep
                         iterator++;
                     }
                     short val = Convert.ToInt16(Console.ReadLine());
+                    loopBreak = true;
                     switch (val)
                     {
                         case (short)Products.Cola:
@@ -56,11 +57,15 @@ namespace VendingMachine_SaiAnudeep
                             selectedItemPrice = candyPrice;
                             break;
                         default:
-                            
+                            loopBreak = false;
+                            //DisplayProducts();
                             break;
                     }
-                    Console.WriteLine("We accept nickels, dimes and quarters.");
-                    IsSuccess = ProcessItem(val,selectedItemPrice,0);
+                    if (loopBreak) // If Entered product value is correct, we process furthur steps
+                    {
+                        Console.WriteLine("We accept nickels, dimes and quarters.");
+                        loopBreak = ProcessItem(val, selectedItemPrice, 0);
+                    }
                         
                 }
             }
@@ -124,6 +129,14 @@ namespace VendingMachine_SaiAnudeep
                     {
                         Console.WriteLine("Please accept the return change of " + (totalAmountInserted - selectedItemPrice) + "$");
                         success = true;
+                        Console.WriteLine();
+                        Console.WriteLine("If you wish to Exit press Y else press any other key to display Menu.");
+                        string isExit = Convert.ToString(Console.ReadLine()).ToUpper();
+                        if (isExit == "Y")
+                            Environment.Exit(0);
+                        else
+                            DisplayProducts();
+
                     }
                     isLoopBreak = true;
                 }
