@@ -1,0 +1,7 @@
+C:\Users\User\Documents\Tasks\VendingMachine_SaiAnudeep\VendingMachine_SaiAnudeep\obj\Debug\VendingMachine_SaiAnudeep.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Tasks\VendingMachine_SaiAnudeep\VendingMachine_SaiAnudeep\obj\Debug\VendingMachine_SaiAnudeep.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Tasks\VendingMachine_SaiAnudeep\VendingMachine_SaiAnudeep\bin\Debug\VendingMachine_SaiAnudeep.exe.config
+C:\Users\User\Documents\Tasks\VendingMachine_SaiAnudeep\VendingMachine_SaiAnudeep\bin\Debug\VendingMachine_SaiAnudeep.exe
+C:\Users\User\Documents\Tasks\VendingMachine_SaiAnudeep\VendingMachine_SaiAnudeep\bin\Debug\VendingMachine_SaiAnudeep.pdb
+C:\Users\User\Documents\Tasks\VendingMachine_SaiAnudeep\VendingMachine_SaiAnudeep\obj\Debug\VendingMachine_SaiAnudeep.exe
+C:\Users\User\Documents\Tasks\VendingMachine_SaiAnudeep\VendingMachine_SaiAnudeep\obj\Debug\VendingMachine_SaiAnudeep.pdb
